@@ -1,0 +1,8 @@
+---
+# Install vsftpd packages
+
+- name: packages are installed
+  package:
+    name: "{{ vsftpd_packages_install }}"
+    state: present
+  become: true

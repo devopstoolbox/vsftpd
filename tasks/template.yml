@@ -1,0 +1,10 @@
+---
+# Template configuration files for vsftpd
+
+- name: template is copied
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  become: true
+  loop: "{{ vsftpd_templates_copy }}"
+  when: vsftpd_copy_templates

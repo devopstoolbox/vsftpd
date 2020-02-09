@@ -1,0 +1,11 @@
+---
+# Configure vsftpd
+
+- name: service is enabled and started
+  service:
+    name: "{{ item }}"
+    enabled: true
+    state: started
+  become: true
+  loop: "{{ vsftpd_services_enable }}"
+  when: vsftpd_enable_service

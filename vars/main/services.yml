@@ -1,0 +1,18 @@
+---
+# Services to enable
+_vsftpd_services_enable:
+  all: []
+  CentOS_7:
+    - vsftpd
+  RedHat_7:
+    - vsftpd
+  CentOS_8:
+    - vsftpd
+  RedHat_8:
+    - vsftpd
+  Fedora_31:
+    - vsftpd
+  Debian_10:
+    - vsftpd
+  Ubuntu_18:
+    - vsftpd

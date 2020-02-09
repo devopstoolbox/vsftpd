@@ -1,0 +1,6 @@
+# Molecule managed
+---
+service:
+  vsftpd:
+    enabled: true
+    running: true
