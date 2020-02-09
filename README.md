@@ -8,10 +8,10 @@ vsftpd
 Ansible galaxy:
 ---------------
 
-[https://galaxy.ansible.com/devops-toolbox.vsftpd](https://galaxy.ansible.com/devops-toolbox.vsftpd)
+[https://galaxy.ansible.com/devopstoolbox.vsftpd](https://galaxy.ansible.com/devopstoolbox.vsftpd)
 
 ```bash
-ansible-galaxy install devops-toolbox.vsftpd
+ansible-galaxy install devopstoolbox.vsftpd
 ```
 
 Requirements
@@ -56,7 +56,7 @@ Example Playbook
   tasks:
     - name: vsftpd is configured
       import_role:
-        name: devops-toolbox.vsftpd
+        name: devopstoolbox.vsftpd
       vars:
         vsftpd_enable_service: true
         vsftpd_copy_templates: true
@@ -82,4 +82,4 @@ MIT
 Author Information
 ------------------
 
-- [Mihai Criveti](https://www.linkedin.com/in/devops-toolbox.)
+- [Mihai Criveti](https://www.linkedin.com/in/devopstoolbox.)
